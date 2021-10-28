@@ -1,0 +1,48 @@
+                                                           ALGORETHM FOR STACK LINKLIST
+  //-------FOR PUSH------//
+
+STEP1: start
+STEP2: Accept the data to push into stack.
+STEP3: Create pointer node and temp and put the value in node.
+STEP4: Assin th data in node[item] and also assin node[next]in NULL.
+STEP5: if(top==NULL) top = start = node and return.
+STEP6: put temp=start.
+STEP7: repeat while(temp[next] != NULL)
+                 temp=temp[next]
+STEP8: end of the while
+STEP9: temp[next]=node
+STEP10:top=node
+STEP11:End
+--------------------------------------------------------------------------------------------------------------
+
+    //------FOR POP------//
+
+STEP1: Start
+STEP2: create pointer NULL,temp,temp1
+STEP3: if top==NULL display "stack is alredy empty"
+STEP4: return
+STEP5: if top==start put data=top[item] and display "data is pop out" //  for some data
+STEP6: free the top
+STEP7: top and star = NULL
+STEP8: return
+STEP9: temp=start 
+STEP10: repeat while(temp[next] = NULL)
+                    temp1=temp
+                    temp=temp[next] 
+STEP10: data = top[item] display "data is pop out"     //  for many data 
+STEP11: free top
+STEP12: top = temp1
+STEP13: top[next] = NULL
+STEP14: End
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+         //-------for Traverse--------//
+STEP1: Start
+STEP2: if start==NULL display "stack is empty !!"
+STEP3: return
+STEP4: create pointer temp
+STEP5: repeate while(temp != NULL)
+                   dislpay temp[next]
+                   temp=temp[next]
+STEP6: End

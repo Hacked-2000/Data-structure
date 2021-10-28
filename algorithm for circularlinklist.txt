@@ -1,0 +1,90 @@
+************************************************ ALGORITHM FOR CICULAR LINKLIST*******************************************
+
+******** FOR INSERTFIRST **********
+1. Start
+2. create new node *p
+3. Put value of p using malloc
+4. Enter the element
+5. if(start==NULL)
+        p[next]=p
+        start=p
+        last=p
+        End of if
+6. else p[next=start
+        start=p
+        last[next]=start
+        End of else
+7. return(start)
+8. End
+
+********** FOR TRAVERSE *********
+1. Start
+2. create new node *p
+3. Put p=start
+4. if(p=NULL)
+     print 'list is empty'
+5. else repeate while(p != last)
+              print(%d-->,p->num)
+              p=p[next]
+6.  End of while
+7. print(%d-->,p[num]
+8. End
+
+********** FOR INSERTLAST ***********
+1. Start
+2. Create node *p
+3. Put value of p using malloc
+4. print 'Enter element'
+5. if(stat==NULL)
+       p[next]=p
+       start=p
+       last=p
+       End of if
+6. else  last[next]=p
+         p[next]=start
+         last=p
+         end of else
+7. return(start)
+8. End
+
+*********** FOR DELETEFIRST ************
+1. Start
+2. create node *p
+3. if(start==NULL)
+      print 'list is empty'
+      end of if
+4. else if(start[next]==start)                  //   for only 1 element
+        print 'element deleted is %d,start[num]'
+        start=NULL
+        end of else if
+5. else  print 'element deleted is %d,start[num]    // for more then 1 element
+             p=start[next]
+             free(start)
+             start=p
+             last[next]=start
+             end of else
+6. return(start)
+7. End. 
+
+************ FOR DELETELAST ************
+1. Start
+2. create new node *p,*q
+3. if(start==NULL)
+      print 'List is empty'
+      end of if
+4. else if(start[next]==start)                  //   for only 1 element
+        print 'element deleted is %d,start[num]'
+        start=NULL
+        end of else if
+5. else repeate while(p[next]!=last]
+        p=p[next]
+        print 'Element deleted is %d,last[num]
+        free(last)
+        last[next]=start
+6. End of while
+7. return(start)
+8. end of else
+9. End
+8. 
+
+

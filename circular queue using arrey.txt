@@ -1,0 +1,65 @@
+******************************************** CIRCULAR QUEUE OPERATION USING ARRAY******************************************
+
+********** FOR PUSH ************
+1. Start
+2. Craete int item
+3. if((front == (rear+1) % MAX))
+        print 'circular queue is overfow'
+        end of if.
+4. print 'Enter no for insertion' and put it address of item.
+5. if (front==-1)
+       front++
+       rear++
+6. else rear=(rear+1)%MAX
+      end of else
+7. cqueue[rear]=item
+8. END
+
+************* FOR POP **************
+1. Start
+2. create int item=0
+3. if(front==-1
+      print 'Circular queue is empty;
+           return
+           end of if
+4. if(front==rear)
+       item=cqueue[front]
+       cqueue[front]=0
+       front=-1
+       rear=-1
+       print '%d is deleted,item'
+       return
+       end of if
+5. item=cqueue[front]
+   cqueue[front]=0
+   front=(front+1)%MAX
+   print '%d is deleted,item
+6. End
+ 
+************ FOR TRAVERSE ************
+1. Start
+2. create int temp
+3. if(front==1)
+      print 'Queue is empty'
+      return
+      end of if
+4. temp=front
+5. if(temp>rear)   //  statement of if start
+6. Repeate while(temp>=(rear+1)%MAX)
+       print '%d,cqueue[temp]'
+       temp=(temp+1)%MAX
+       End of while
+7. if(temp<=rear)
+     repeate while(temp<=rear)
+     print '%d,cqueue[temp]
+     temp=temp+1
+     End of while
+8. End of if   
+9. End of if     // statement of if end
+10. if(temp<=rear)
+      repeate while(temp<=rear)
+      print '%d,cqueue[temp]
+      temp=temp=1
+      End of while
+11. End of if
+12.End
